@@ -1,6 +1,6 @@
 {
     "name": "torrent-hunter/solr-bundle",
-    "license": "proprietary",
+    "license": "MIT",
     "type": "project",
     "description": "Solr bundle necessary to search into Solr collection of Torrent-hunter",
     "authors":[
@@ -12,7 +12,7 @@
         }
     ],
     "autoload": {
-        "psr-0": { "": "src/", "SolrBundle": "app/" }
+        "psr-0": { "SolrBundle\\": "src/", "SymfonyStandard": "app/" }
     },
     "require": {
         "php": ">=5.3.3",
