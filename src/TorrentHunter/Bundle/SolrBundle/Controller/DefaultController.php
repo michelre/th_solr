@@ -1,10 +1,10 @@
 <?php
 
-namespace SolrServiceBundle\Controller;
+namespace TorrentHunter\Bundle\SolrBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use JMS\DiExtraBundle\Annotation as DI;
-use SolrServiceBundle\Utils\Utils;
+use TorrentHunter\Bundle\SolrBundle\Utils;
 
 /**
  * @DI\Service("solrService")

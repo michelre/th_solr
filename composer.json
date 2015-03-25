@@ -12,7 +12,7 @@
         }
     ],
     "autoload": {
-        "psr-0": { "SolrBundle\\": "src/", "SymfonyStandard": "app/" }
+        "psr-0": { "TorrentHunter\\Bundle\\SolrBundle\\": "src/", "SymfonyStandard": "app/" }
     },
     "require": {
         "php": ">=5.3.3",

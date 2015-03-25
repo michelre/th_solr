@@ -6,7 +6,7 @@
  * Time: 22:27
  */
 
-namespace SolrServiceBundle\Utils;
+namespace TorrentHunter\Bundle\SolrBundle\Utils;
 
 use Cocur\Slugify\Slugify;
 
