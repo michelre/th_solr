@@ -1,4 +1,4 @@
 services:
-#    torrent_hunter_solr.example:
-#        class: TorrentHunter\Bundle\SolrBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+    solrService:
+        class: TorrentHunter\Bundle\SolrBundle\Controller\DefaultController
+        arguments: []
