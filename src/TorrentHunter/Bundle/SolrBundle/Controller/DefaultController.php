@@ -3,22 +3,14 @@
 namespace TorrentHunter\Bundle\SolrBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use JMS\DiExtraBundle\Annotation as DI;
 use TorrentHunter\Bundle\SolrBundle\Utils;
 
-/**
- * @DI\Service("solrService")
- */
+
 class DefaultController
 {
 
     protected $solarium;
 
-    /**
-     * @DI\InjectParams({
-     *     "solarium" = @DI\Inject("solarium.client"),
-     * })
-     */
     public function __construct(\Solarium\Client $solarium){
         $this->solarium = $solarium;
     }
