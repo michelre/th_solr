@@ -3,7 +3,7 @@
 namespace TorrentHunter\Bundle\SolrBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use TorrentHunter\Bundle\SolrBundle\Utils;
+use TorrentHunter\Bundle\SolrBundle\Utils\Utils;
 
 /**
  * @Route(service="torrenthunter.solr_service")
