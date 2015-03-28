@@ -1,4 +1,4 @@
 services:
-    solr_service:
+    torrenthunter.solr_service:
         class: TorrentHunter\Bundle\SolrBundle\Controller\DefaultController
         arguments: ['@solarium.client']
