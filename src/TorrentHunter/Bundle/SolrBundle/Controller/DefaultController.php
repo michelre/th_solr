@@ -87,7 +87,6 @@ class DefaultController
 
     public function torrentsByCategoryAction($category, $offset, $limit){
         $client = $this->solarium;
-        $serializer = \JMS\Serializer\SerializerBuilder::create()->build();
         $service = new Utils();
 
         $select = array(
