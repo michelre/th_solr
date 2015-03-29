@@ -21,6 +21,7 @@ class DefaultController
         $client = $this->solarium;
 
         $select = array(
+            'query' => 'visible: true',
             'rows'  => 100,
             'sort'  => array('seeds' => 'desc')
         );
@@ -36,7 +37,7 @@ class DefaultController
         $service = new Utils();
 
         $select = array(
-            'query' => 'title: "' . $queryQS . '"',
+            'query' => 'title: "' . $queryQS . '" AND visible: true',
             'start' => ($offset - 1)  * $limit,
             'rows'  => $limit,
             'sort'  => array('seeds' => 'desc')
@@ -71,7 +72,7 @@ class DefaultController
         $service = new Utils();
 
         $moreLikeThisQuery = $client->createMoreLikeThis();
-        $moreLikeThisQuery->setQuery('slug:' . $slug);
+        $moreLikeThisQuery->setQuery('slug:' . $slug . 'AND visible: true');
         $moreLikeThisQuery->setMltFields("title");
         $moreLikeThisQuery->setMinimumDocumentFrequency(1);
         $moreLikeThisQuery->setMinimumTermFrequency(1);
@@ -90,7 +91,7 @@ class DefaultController
         $service = new Utils();
 
         $select = array(
-            'query' => "category:\"" . join("\" OR category:\"", $service->searchByCategory($category)) . "\"",
+            'query' => "category:\"" . join("\" OR category:\"", $service->searchByCategory($category)) . "\" AND visible: true",
             'start' => ($offset - 1)  * $limit,
             'rows'  => $limit,
             'sort'  => array('seeds' => 'desc')
