@@ -41,8 +41,7 @@ class Utils {
             "jeux-consoles" => "game",
             "Jeux consoles" => "game",
             "jeux-pc" => "game",
-            "Jeux PC" => "game",
-            "Jeux Consoles" => "game"
+            "Jeux PC" => "game"
         );
         $softwareCategories = array(
             "logiciels" => "application",
