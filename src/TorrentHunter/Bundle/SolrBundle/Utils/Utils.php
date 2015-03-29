@@ -37,14 +37,21 @@ class Utils {
             "Pack Série" => "serie"
         );
         $gameCategories = array(
+            "Jeux" => "game",
+            "jeux-consoles" => "game",
+            "Jeux consoles" => "game",
+            "jeux-pc" => "game",
             "Jeux PC" => "game",
             "Jeux Consoles" => "game"
         );
         $softwareCategories = array(
+            "logiciels" => "application",
             "Logiciels" => "application",
-            "Application" => "application"
+            "Application" => "application",
+            "Applications" => "application"
         );
         $ebooksCategories = array(
+            "ebook" => "ebook",
             "Ebooks" => "ebook",
             "Ebook" => "ebook"
         );
