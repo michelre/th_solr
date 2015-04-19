@@ -3,6 +3,7 @@
 namespace TorrentHunter\Bundle\SolrBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Config\Definition\Exception\Exception;
 use TorrentHunter\Bundle\SolrBundle\Utils\Utils;
 
 /**
