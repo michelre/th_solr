@@ -61,10 +61,13 @@ class DefaultController
         );
         $query = $client->createSelect($select);
         $result = $client->select($query);
-        $torrent = $service->convertCategoryDocument($result->getDocuments()[0]->getFields());
-        $torrent = $service->removeFieldsDocument($torrent, array("_version_", "_id", "score"));
-
-        return $torrent;
+        if(!empty($result->getDocuments())){
+            $torrent = $service->convertCategoryDocument($result->getDocuments()[0]->getFields());
+            $torrent = $service->removeFieldsDocument($torrent, array("_version_", "_id", "score"));
+            return $torrent;
+        }else{
+            throw new Exception('Torrent not found');
+        }
     }
 
     public function searchSimilarAction($slug){
